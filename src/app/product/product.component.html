@@ -1,0 +1,48 @@
+<h1>Product Page</h1>
+<form #form="ngForm"  (ngSubmit)="submit(form)" >
+  
+
+    Enter Product Id <input name="productId"  ngModel type="text">
+    <button>Edit</button>
+    <button>Delete</button><br><br>
+    Enter Product Name<input name="productName" ngModel type="text">
+    <button>Edit</button>
+    <button>Delete</button><br><br>
+    Enter Product Description<input name="productDescription" ngModel type="text">
+    <button>Edit</button>
+    <button>Delete</button><br><br>
+    Enter Product Price<input name="productPrice" ngModel type="text">
+    <button>Edit</button>
+    <button>Delete</button><br><br>
+    Enter Product URL<input name="productURL" ngModel type="url">
+    <button>Edit</button>
+    <button>Delete</button><br><br>
+    Enter Category<input name="category" ngModel type="text">
+    <button>Edit</button>
+    <button>Delete</button><br><br>
+     
+    <button>Submit</button><br>
+    
+   
+  </form>
+  
+  <ul>
+    <li>
+  Product Id: {{productId}}
+    </li>
+    <li>
+      Product Name: {{productName}}
+    </li>
+    <li>
+    Product Description: {{productDescription}}
+  </li>
+  <li>
+    Product Price: {{productPrice}}
+  </li>
+  <li>
+    Product URL: {{productURL}}
+  </li>
+  <li>
+    Category: {{category}}
+  </li>
+  </ul>

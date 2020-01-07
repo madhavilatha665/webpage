@@ -1,0 +1,21 @@
+form{
+    text-align: center;
+    background-color:lightblue ;
+}
+input{
+    
+   
+    border: 1px solid #ccc;
+    
+   
+}
+div{
+    color: red;
+}
+button{
+    background-color:lightgray;
+    color: black;
+}
+h1{
+    color: gray;
+}

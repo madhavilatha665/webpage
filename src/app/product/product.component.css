@@ -1,0 +1,14 @@
+form{
+    text-align: center;
+    background-color:lightblue;
+}
+h1{
+    text-align: center;
+    color: gray;
+}
+button{
+    background-color:lightgray;
+}
+ul{
+    list-style-type: none;
+}

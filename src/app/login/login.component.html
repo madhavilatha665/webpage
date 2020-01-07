@@ -1,0 +1,53 @@
+<html>
+  <body>
+    
+            
+  
+          
+            <form [formGroup]="login" (ngSubmit)="onSubmit()">
+              
+                EmailId<input type="text" class="form-control" formControlName="emailId" placeholder="email Id"
+                  [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }">
+                <div *ngIf="submitted && f.emailId.errors" >
+                  <div  *ngIf="f.emailId.errors.required">emailId is required
+
+                  </div>
+                </div><br><br>
+              
+  
+  
+              
+                Password<input type="password" class="form-control" formControlName="password"
+                  placeholder="Password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                <div *ngIf="submitted && f.password.errors" >
+                  <div class="fonter" *ngIf="f.password.errors.required">Password is required
+
+                  </div>
+                </div>
+              
+  
+  
+              <div>
+                <input type="checkbox">Remember Me
+              </div>
+              <div >
+                <!-- <input id="loginbtn" type="submit" routerLink="/userhome" value="Login" class="btn float-right login_btn"> -->
+                <button type="submit"  >Login</button>
+              </div>
+              <br><br>
+              <div >
+                <div >
+                  Don't have an account?<a routerLink="/register">Sign Up</a>
+                </div>
+                <div >
+                  <a routerLink="/forgotpassword">Forgot your password?</a>
+                </div>
+              </div>
+  
+            </form>
+          
+  
+  
+        
+  </body>
+</html>
